@@ -65,7 +65,7 @@
         'Merhaba Öztuğ Metal,',
         'Ad Soyad: ' + (data.get('ad') || ''),
         'Telefon: ' + (data.get('telefon') || ''),
-        'Hurda cinsi: ' + (data.get('cins') || ''),
+        (document.querySelector('label[for=cins]') || {}).textContent + ': ' + (data.get('cins') || ''),
         'Bölge: ' + (data.get('bolge') || ''),
         'Miktar / açıklama: ' + (data.get('mesaj') || '-')
       ];
